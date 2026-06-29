@@ -1,107 +1,36 @@
-# Actividad Base: Flask + DataXY
+# Actividad: Lectura de Eje X - Eje Y
+**Asignatura:** Laboratorio de Programación L401  
+**Alumno:** Jerry  
+**Institución:** INACAP  
 
-Este repositorio es un ejemplo inicial para practicar con **Flask** y **GitHub**.
-La intensión es que los estudiantes lo usen como punto de partida, lo modifiquen y luego lo suban a su propio repositorio.
-
----
-
-## Objetivo
-
-* Clonar el repositorio y trabajar en una copia personal
-* Ejecutar Flask y recibir datos **x, y** desde una aplicación móvil
-* Visualizar datos en una página HTML sencilla
-* Subir cambios a GitHub
+Este proyecto consiste en una aplicación web desarrollada con **Flask** que simula de forma aleatoria la lectura de coordenadas bidimensionales (X, Y) provenientes de un hardware/sensor. La interfaz evalúa matemáticamente el cuadrante activo en base a los signos de los valores generados y renderiza visualmente la información de manera dinámica en una matriz expandida de 4x4 utilizando **Jinja2** y **CSS puro (mediante selectores de ID)**.
 
 ---
 
-## Requisitos
-
-* Entorno para Python y Flask instalados
-* Cuenta en GitHub
-* Aplicación móvil (APK) para enviar datos
-
----
-
-## Descarga de Aplicación APK
-
-Se puede descargar la aplicación móvil desde aquí:
-
-[Descargar XYaTCPfull.apk](./XYaTCPfull.apk)
+## ➢ Características de Visualización (Punto 3.4)
+* **Matriz Superior 4x4:** Representación expandida completa para mayor precisión de cuadrantes.
+* **Estilos Visuales Personalizados:** Diseño ordenado y centrado mediante `border-collapse`, tamaños simétricos de celda (`80px`) y tipografía limpia.
+* **Colores por Cuadrante:** Iluminación dinámica utilizando una paleta de colores hexadecimales específica para cada cuadrante activo:
+    * Q1 (Verde)
+    * Q2 (Rojo)
+    * Q3 (Amarillo/Dorado)
+    * Q4 (Azul/Cian)
 
 ---
 
-## Pasos básicos
+## ➢ Estructura del Repositorio (Etapa 1)
+El repositorio contiene los siguientes archivos obligatorios modificados para el cumplimiento de la pauta:
 
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/jotaefepece/Actividad-dataXY-base
-cd Actividad-dataXY-base
-```
-
-### 2. Instalar y ejecutar la aplicación apk
-
-```bash
-### La red del celular tiene que estar en la misma red local ###
-```
-
-### 3. Ejecutar Flask
-
-```bash
-python3 app.py
-```
-
-### 4. Probar en el navegador
-
-```
-http://127.0.0.1:5000
-```
+* `app.py` -> Lógica del servidor Flask y generación de coordenadas aleatorias.
+* `templates/index.html` -> Vista principal con CSS en el <head> e IDs para diseño dinámico (sin clases ni JavaScript).
+* `templates/info.html` -> Vista complementaria de información.
+* `templates/mensaje.html` -> Vista complementaria de mensajes.
+* `capturas/` -> Carpeta con las capturas de pantalla de la visualización.
+* `README.md` -> Documentación personalizada del proyecto (Este archivo).
 
 ---
 
-## Estructura del ejercicio
-
-```bash
-.
-├── app.py
-├── capturas
-│   ├── archivos-base.png
-│   └── vista-base.png
-├── README.md
-├── templates
-│   └── index.html
-└── XYaTCPfull.apk
-```
-
----
-
-## Capturas
-
-### Estructura de archivos
-
-![Estructura de los archivos](capturas/archivos-base.png)
-
----
-
-### Vista en el navegador
-
-![Vista HTML](capturas/vista-base.png)
-
----
-
-## Inicio del ejercicio
-
-Cada estudiante debe:
-
-* Crear una pestaña en Flask que muestre un dato recibido
-* Modificar el HTML para encender una celda en un rectángulo **2x2** según los valores **x, y**
-* Subir su versión modificada a su propio repositorio
-
----
-
-## Notas
-
-* Este README es solo una guía básica.
-* El trabajo final depende de cada estudiante y de cómo adapte el ejercicio.
-
----
+## ➢ Instrucciones de Ejecución
+1. Navegar a la carpeta del proyecto:
+   ```bash
+   cd /home/amogos/respaldosgithub/l401-lecturaxy-jerry
