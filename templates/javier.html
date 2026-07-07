@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecturas X-Y (Javier Salas)</title>
+    <meta http-equiv="refresh" content="1">
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    #contenedor,
+    #contenedorBoton {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contenedor {
+        gap: 20px;
+    }
+
+    #contenedorBoton {
+        margin-top: 20px;
+    }
+
+    #tarjetaX,
+    #tarjetaY {
+        width: 250px;
+        background-color: #eeeeee;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        color: black;
+    }
+
+    #tarjetaMatrix {
+        width: 120px;
+        background-color: #eeeeee;
+        border-radius: 10px;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    #tarjetaMatrix:hover {
+        background-color: #dddddd;
+        cursor: pointer;
+    }
+
+    #valorX,
+    #valorY {
+        font-size: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+    <h1>Visualización de Datos X-Y</h1>
+	<h2>Javier Salas</h2>
+	<p>
+		Esta vista muestra los valores numéricos recibidos desde la aplicación móvil.
+	</p>
+    <div id="contenedor">
+        <div id="tarjetaX">
+            <h2>Sensor X</h2>
+            <p id="valorX">{{ ejeX }}</p>
+        </div>
+
+        <div id="tarjetaY">
+            <h2>Sensor Y</h2>
+            <p id="valorY">{{ ejeY }}</p>
+        </div>
+    </div>
+
+    <div id="contenedorBoton">
+        <a id="tarjetaMatrix" href="{{ url_for('matrix') }}">
+            Matriz →
+        </a>
+    </div>
+
+</body>
+</html>

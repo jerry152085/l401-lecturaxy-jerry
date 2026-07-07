@@ -37,11 +37,9 @@
         <a href="/" style="color: #00ff00; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Matriz Principal ]</a>
         <a href="/info" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Vista Alternativa (jfpc) ]</a>
         <a href="/mensaje" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Mensajes del Sistema ]</a>
-        <a href="/javier" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Vista Javier ]</a>
-        <a href="/luis" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Vista Luis ]</a>  
-     </div>
+    </div>
 
-    <h1>Posición XY (Matriz 4x4)</h1>
+   <h1>Posición XY (Matriz 4x4)</h1>
 
     <p>X = {{ ejeX }}</p>
     <p>Y = {{ ejeY }}</p>

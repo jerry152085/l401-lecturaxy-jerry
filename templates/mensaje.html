@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2">
+    <title>Mensajes del Sistema</title>
+</head>
+<body style="background-color: #121212; color: white; font-family: sans-serif; padding: 20px;">
+
+    <!-- Barra de Navegación Estática (Sin JavaScript) -->
+    <div id="menu-navegacion" style="background-color: #222; padding: 15px; text-align: center; margin-bottom: 25px; border-bottom: 3px solid #00ffff;">
+        <a href="/" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Matriz Principal ]</a>
+        <a href="/info" style="color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Vista Alternativa (jfpc) ]</a>
+        <a href="/mensaje" style="color: #00ffff; margin: 0 15px; text-decoration: none; font-weight: bold;">[ Mensajes del Sistema ]</a>
+    </div>
+
+    <h1>Estado y Mensajes del Sistema</h1>
+    <p>Lectura actual: <strong>X: {{ ejeX }}, Y: {{ ejeY }}</strong></p>
+
+    <!-- Caja de Mensaje Dinámica usando Jinja2 -->
+    <div id="alerta-cuadrante" style="padding: 20px; border-radius: 5px; font-size: 18px; font-weight: bold; text-align: center; margin-top: 20px;
+        {% if ejeX >= 0 and ejeY >= 0 %}
+            background-color: #1e4620; color: #2ecc71; border: 2px solid #2ecc71;
+        {% elif ejeX < 0 and ejeY >= 0 %}
+            background-color: #5c1d1d; color: #e74c3c; border: 2px solid #e74c3c;
+        {% elif ejeX < 0 and ejeY < 0 %}
+            background-color: #5c4a1d; color: #f1c40f; border: 2px solid #f1c40f;
+        {% else %}
+            background-color: #1d3c5c; color: #3498db; border: 2px solid #3498db;
+        {% endif %}">
+        
+        {% if ejeX >= 0 and ejeY >= 0 %}
+            🟢 SISTEMA EN CUADRANTE 1 (Q1) - Valores Positivos Activos
+        {% elif ejeX < 0 and ejeY >= 0 %}
+            🔴 SISTEMA EN CUADRANTE 2 (Q2) - Eje X Negativo / Eje Y Positivo
+        {% elif ejeX < 0 and ejeY < 0 %}
+            🟡 SISTEMA EN CUADRANTE 3 (Q3) - Ambos Valores Negativos
+        {% else %}
+            🔵 SISTEMA EN CUADRANTE 4 (Q4) - Eje X Positivo / Eje Y Negativo
+        {% endif %}
+    </div>
+
+</body>
+</html>
