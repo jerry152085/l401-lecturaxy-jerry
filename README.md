@@ -43,17 +43,28 @@ Para levantar el servidor, ejecuta:
 python3 app.py
 ```
 
-## 👥 Referencias y Créditos
+##  Referencias y Créditos
 
 Este repositorio forma parte de un ecosistema de desarrollo colaborativo para la asignatura. La integración de módulos externos tiene como objetivo evaluar la compatibilidad, modularidad e intercambio de datos entre diferentes propuestas de interfaces web.
 
-### 🔗 Repositorios Integrados y Co-Autores
+###  Repositorios Integrados y Co-Autores
 *   **Módulo /javier:** Interfaz adaptada y sincronizada desde el repositorio base de **Javier Salas**. Implementa metodologías específicas de captura visual de señales.
     *   *Origen:* [github.com/javier-sb/l401-lecturaxy](https://github.com/javier-sb/l401-lecturaxy)
 *   **Módulo /luis:** Componente y lógica de navegación cruzada adaptada desde el repositorio de **Luis Alberto Viscarra**. Aporta robustez al flujo de rutas secundarias.
     *   *Origen:* [github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc](https://github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc)
 
-### 🏛️ Institución y Contexto Académico
+###  Institución y Contexto Académico
 *   **Institución:** INACAP (Universidad Tecnológica de Chile).
 *   **Asignatura:** Desarrollo de Software para Hardware (DCSH01).
 *   **Docente Evaluador:** Integrado en el programa oficial de revisión de código y competencias de sistemas embebidos.
+
+*   ##  Evidencias de Funcionamiento
+*   ###  Captura 1: Dashboard Principal
+*   <img width="1432" height="625" alt="Captura de pantalla 2026-07-13 034531" src="https://github.com/user-attachments/assets/8026a920-ad76-43d4-b7b5-138095ea9e0e" />
+ Captura 2: Módulo de Javier
+<img width="1435" height="765" alt="Captura de pantalla 2026-07-13 021143" src="https://github.com/user-attachments/assets/80534e16-125e-443e-9051-e2cb49ce2093" />
+###  Captura 3: Módulo de Luis
+<img width="1900" height="726" alt="Captura de pantalla 2026-07-13 021228" src="https://github.com/user-attachments/assets/b92de605-23a8-43f6-a854-79d7ed61d70d" />
+
+
+
