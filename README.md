@@ -23,3 +23,7 @@ python3 app.py
 ## Referencias y Créditos
 * **Pestaña /javier:** Adaptada desde el repositorio de Javier Salas ([github.com/javier-sb/l401-lecturaxy](https://github.com/javier-sb/l401-lecturaxy)).
 * **Pestaña /luis:** Adaptada desde el repositorio de Luis Alberto Viscarra ([github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc](https://github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc)).
+
+* ## 📸 Evidencias de Funcionamiento
+
+> **Nota del desarrollador:** Las imágenes del correcto funcionamiento de la interfaz, las pruebas de comunicación y el despliegue de las curvas en tiempo real se encuentran almacenadas de forma ordenada en la carpeta `/capturas` de esta rama (`main`).
