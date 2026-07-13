@@ -4,6 +4,14 @@ Proyecto desarrollado para la asignatura **Desarrollo de Software para Hardware 
 
 Esta aplicación implementa un servidor web basado en Flask, diseñado para recibir y procesar flujos de datos de los sensores.
 
+### 📋 Especificaciones Técnicas del Sistema
+
+*   **Protocolo de Comunicación:** REST API sobre HTTP (Mapeo de datos bidimensionales mediante endpoints dedicados).
+*   **Procesamiento de Datos:**
+    *   **Frecuencia de Muestreo:** Diseñado para soportar flujos continuos de datos en tiempo real (lecturas X e Y provenientes del hardware).
+    *   **Formato de Carga (Payload):** Transmisión estructurada en formato **JSON** (ej. `{"x": valor, "y": valor}`).
+*   **Entorno de Ejecución:** Servidor local ligero (`localhost` / `127.0.0.1`) corriendo sobre el puerto `5000` mediante el microframework Flask en entorno embebido/Linux.
+*   **Modularidad del Frontend:** Renderizado dinámico e interactivo de curvas y coordenadas para el análisis gráfico de las señales.
 ## Características Principales
 * **Página Principal Personal:** Interfaz de desarrollo propio.
 * **Simulación de Datos Integrada:** Lógica en segundo plano.
