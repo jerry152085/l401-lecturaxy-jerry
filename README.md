@@ -25,6 +25,17 @@ Esta aplicación implementa un servidor web basado en Flask, diseñado para reci
 * `app.py`: Servidor principal.
 * `templates/`: Interfaces de usuario.
 
+###  Árbol de Directorios y Componentes
+
+```text
+l401-lecturaxy-jerry/
+├── capturas/          # Almacenamiento de evidencias, pantallazos y gráficas del sistema.
+├── templates/         # Vistas y archivos HTML renderizados por el servidor web Flask.
+│   ├── index.html     # Dashboard principal para la visualización de datos X-Y.
+│   ├── javier.html    # Módulo/Pestaña adaptada de la interfaz de Javier Salas.
+│   └── luis.html      # Módulo/Pestaña adaptada de la interfaz de Luis Viscarra.
+├── app.py             # Script principal en Python que inicializa el servidor Flask y la API.
+└── README.md          # Documentación técnica del proyecto (este archivo).
 ## Ejecución del Servidor
 Para levantar el servidor, ejecuta:
 
