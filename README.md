@@ -43,10 +43,17 @@ Para levantar el servidor, ejecuta:
 python3 app.py
 ```
 
-## Referencias y Créditos
-* **Pestaña /javier:** Adaptada desde el repositorio de Javier Salas ([github.com/javier-sb/l401-lecturaxy](https://github.com/javier-sb/l401-lecturaxy)).
-* **Pestaña /luis:** Adaptada desde el repositorio de Luis Alberto Viscarra ([github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc](https://github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc)).
+## 👥 Referencias y Créditos
 
-* ##  Evidencias de Funcionamiento
+Este repositorio forma parte de un ecosistema de desarrollo colaborativo para la asignatura. La integración de módulos externos tiene como objetivo evaluar la compatibilidad, modularidad e intercambio de datos entre diferentes propuestas de interfaces web.
 
-> **Nota del desarrollador:** Las imágenes del correcto funcionamiento de la interfaz, las pruebas de comunicación y el despliegue de las curvas en tiempo real se encuentran almacenadas de forma ordenada en la carpeta `/capturas` de esta rama (`main`).
+### 🔗 Repositorios Integrados y Co-Autores
+*   **Módulo /javier:** Interfaz adaptada y sincronizada desde el repositorio base de **Javier Salas**. Implementa metodologías específicas de captura visual de señales.
+    *   *Origen:* [github.com/javier-sb/l401-lecturaxy](https://github.com/javier-sb/l401-lecturaxy)
+*   **Módulo /luis:** Componente y lógica de navegación cruzada adaptada desde el repositorio de **Luis Alberto Viscarra**. Aporta robustez al flujo de rutas secundarias.
+    *   *Origen:* [github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc](https://github.com/luisviscarrahellie-ux/l401-lecturaxy-jfpc)
+
+### 🏛️ Institución y Contexto Académico
+*   **Institución:** INACAP (Universidad Tecnológica de Chile).
+*   **Asignatura:** Desarrollo de Software para Hardware (DCSH01).
+*   **Docente Evaluador:** Integrado en el programa oficial de revisión de código y competencias de sistemas embebidos.
