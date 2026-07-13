@@ -4,7 +4,7 @@ Proyecto desarrollado para la asignatura **Desarrollo de Software para Hardware 
 
 Esta aplicación implementa un servidor web basado en Flask, diseñado para recibir y procesar flujos de datos de los sensores.
 
-### 📋 Especificaciones Técnicas del Sistema
+###  Especificaciones Técnicas del Sistema
 
 *   **Protocolo de Comunicación:** REST API sobre HTTP (Mapeo de datos bidimensionales mediante endpoints dedicados).
 *   **Procesamiento de Datos:**
